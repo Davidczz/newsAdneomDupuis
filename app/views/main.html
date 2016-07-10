@@ -1,0 +1,32 @@
+<div ng-controller="MainCtrl" class="content">
+  <a ng-href="#/addPost" class="btn btn-sm btn-success pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Add
+    news</a>
+  <h1>Adneom News</h1>
+  <p>Welcome on Adneom news page. Here, you will find all Adneom's latest news.</p>
+  <p class="alert alert-info"><i class="glyphicon glyphicon-info-sign"></i> <b>Informations</b><br>
+    Click on the <i class="glyphicon glyphicon-thumbs-up"></i> button to vote for this news.<br>
+    Click on the news title to see it on the original website.<br>
+    Click on 'comment' to add a comment or see the comments of the news.<br>
+    <i>Some news had been ignored because the title was empty.</i>
+  </p>
+  <table class="table table-news">
+
+    <tbody>
+
+    <tr ng-repeat="newsItem in news" ng-if="newsItem.title">
+
+      <td>{{$index}}<i class="glyphicon glyphicon-thumbs-up pull-right vote-button"
+                       ng-click="voteUp(newsItem._id)"></i>
+      </td>
+      <td><a ng-href="{{newsItem.link}}" target="_blank">{{newsItem.title}}</a><br>
+        <span style="font-size:8pt;"><b>{{newsItem.upvotes}}</b> votes for this news - <a
+          ng-href="#/post/{{newsItem._id}}"><b>{{newsItem.numberComments}}</b> comments</a></span>
+      </td>
+
+    </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

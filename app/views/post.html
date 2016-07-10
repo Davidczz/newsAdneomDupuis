@@ -1,0 +1,33 @@
+<div ng-controller="PostCtrl"  class="content">
+  <a ng-href="#/"><i class="glyphicon glyphicon-chevron-left"></i> Go back to news list </a>
+  <h1>Details of a news</h1>
+  <h3>Title: <a ng-href="{{post.link}}" target="_blank">{{post.title}}</a></h3>
+  <h5>{{post.upvotes}} votes for this news | {{post.numberComments}} comments</h5>
+  <div class="row">
+    <div class="col-xs-12">
+
+      <p>Add a comment</p>
+      <div ng-if="error" class="alert alert-danger">
+        <p>{{error}}</p>
+      </div>
+      <div ng-if="success" class="alert alert-success">
+        <p>{{success}}</p>
+      </div>
+      <form name="comment" novalidate>
+        <input type="text" placeholder="Author name" class="form-control" ng-model="author" ng-required="true" name="author"><br>
+        <textarea class="form-control" ng-model="commentText" placeholder="Comment"></textarea><br>
+        <a href="" ng-click="addComment(post._id)" class="btn btn-sm btn-success col-xs-3 pull-right">Add the comment</a>
+      </form>
+
+    </div>
+    <hr>
+    <div class="col-xs-12">
+      <h4>{{post.numberComments}} comments found</h4>
+      <div ng-repeat="comment in post.comments">
+        <b>Added by: </b>{{comment.author}}<br>
+        <b>Comment: </b>{{comment.body}}<br>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>

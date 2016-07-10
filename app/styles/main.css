@@ -1,0 +1,134 @@
+body {
+  padding: 0;
+  background-image: url(http://www.adneom.com/www/public/images/join.jpg);
+  color: #666;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.vote-button {
+  color: darkslategrey;
+  cursor: pointer;
+}
+
+.vote-button:hover {
+  -ms-transform: rotate(-12deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-12deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-12deg);
+  cursor: hand;
+  color: #0000FF;
+}
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fixed nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu-fixed {
+  overflow: hidden;
+  height: 75px;
+  margin-bottom: 90px;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  background: #FFF;
+  box-shadow: 1px 1px 1px #b8b8b8;
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+}
+
+nav .header_menu {
+  width: 995px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav .header_menu .box-logo {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 184px;
+  height: 164px;
+  position: absolute;
+}
+
+nav .header_menu .box-logo .logo {
+  display: block;
+  text-indent: -9999px;
+  background: url(http://www.adneom.com/www/public/images/header_adneom_logo.png) no-repeat center top;
+  width: 184px;
+  height: 164px;
+}
+
+nav .header_menu h2 {
+  margin: 0 0 0 200px;
+  padding: 0;
+  float: left;
+  color: #666;
+  font-size: 22px;
+  font-family: 'HelveticaNeue45Light', helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 82px;
+}
+
+nav .header_menu h2 a {
+  text-decoration: none;
+  color: #666;
+  font-size: 22px;
+  font-family: 'HelveticaNeue45Light', helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+nav .header_menu .top-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+  top: 15px;
+  right: 280px;
+}
+
+nav .header_menu .top-menu li {
+  float: left;
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+
+.table-news {
+  background-color: #e9f9ff;
+}
+
+.content {
+  background-color: #e9f9ff;
+  color: #666;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  margin: 15px 0 0 0;
+}
+
+.white {
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

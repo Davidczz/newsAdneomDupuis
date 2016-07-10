@@ -1,0 +1,18 @@
+<div ng-controller="AddpostCtrl"  class=" col-xs-12 content">
+  <a ng-href="#/"><i class="glyphicon glyphicon-chevron-left"></i> Go back to news list </a>
+  <div class="col-xs-12">
+    <h1>Add a news</h1>
+    <p>Please fill this form to add a new news on the database</p>
+    <div ng-if="error" class="alert alert-danger">
+      <p>{{error}}</p>
+    </div>
+    <form name="news" novalidate>
+      <input type="text" class="form-control" ng-model="title" placeholder="News title"><br>
+      <input type="text" placeholder="Url of the news" class="form-control" ng-model="link" ng-required="true"
+             name="link"><br>
+      <a ng-click="addNews()" class="btn btn-sm btn-success col-xs-3 pull-right">Add the news</a>
+    </form>
+
+  </div>
+
+</div>
